@@ -62,5 +62,7 @@ return require('packer').startup(function(use)
     use('tanvirtin/monokai.nvim')
     use { "catppuccin/nvim", as = "catppuccin" }
     use('Luxed/ayu-vim')
+    use('felipeagc/fleet-theme-nvim')
+
     use('lewis6991/gitsigns.nvim')
 end)
