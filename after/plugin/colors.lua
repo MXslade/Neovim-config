@@ -1,6 +1,11 @@
 function ColorMyPencils()
-    vim.g.ayucolor = "mirage"
-    vim.cmd.colorscheme("fleet")
+    -- vim.g.ayucolor = "mirage"
+    -- vim.cmd.colorscheme("onedark")
+
+    require('onedark').setup {
+        style = 'darker'
+    }
+    require('onedark').load()
 
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
@@ -19,3 +24,5 @@ ColorMyPencils()
 -- vom.cmd.colorscheme("ayu")
 --
 -- fleet
+--
+-- onedark
