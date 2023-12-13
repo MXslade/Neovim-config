@@ -2,10 +2,12 @@ function ColorMyPencils()
     -- vim.g.ayucolor = "mirage"
     -- vim.cmd.colorscheme("onedark")
 
-    require('onedark').setup {
-        style = 'darker'
-    }
-    require('onedark').load()
+    -- require('onedark').setup {
+    --     style = 'darker'
+    -- }
+    -- require('onedark').load()
+
+    vim.cmd("colorscheme tokyonight-day") -- for day theme
 
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
