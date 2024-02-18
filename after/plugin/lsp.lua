@@ -9,6 +9,7 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'rust_analyzer',
+    'gopls'
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -18,6 +19,14 @@ lsp.on_attach(function(client, bufnr)
 	-- Add more after I learn how to use more features
 	-- right now I only use go to definition thing
 end)
+
+require('lspconfig').gopls.setup({
+    settings = {
+        gopls = {
+            gofumpt = true
+        }
+    }
+})
 
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()

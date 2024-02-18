@@ -7,7 +7,11 @@ function ColorMyPencils()
     -- }
     -- require('onedark').load()
 
-    vim.cmd("colorscheme tokyonight-day") -- for day theme
+    require('monokai').setup { palette = require('monokai').pro, 
+        italics = false 
+    }
+
+    -- vim.cmd("colorscheme tokyonight-night") -- for day theme
 
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
@@ -28,3 +32,5 @@ ColorMyPencils()
 -- fleet
 --
 -- onedark
+--
+-- tokyonight
