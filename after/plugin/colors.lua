@@ -7,9 +7,15 @@ function ColorMyPencils()
     -- }
     -- require('onedark').load()
 
-    require('monokai').setup { palette = require('monokai').pro, 
-        italics = false 
-    }
+    -- require('monokai').setup { palette = require('monokai').pro, 
+    --     italics = false 
+    -- }
+
+    require("rose-pine").setup({
+        variant="moon",
+        styles={italic = false}
+    })
+    vim.cmd("colorscheme rose-pine")
 
     -- vim.cmd("colorscheme tokyonight-night") -- for day theme
 
