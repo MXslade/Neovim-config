@@ -21,3 +21,6 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("n", "g]", vim.diagnostic.goto_next)
+vim.keymap.set("n", "g[", vim.diagnostic.goto_prev)
+
